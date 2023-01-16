@@ -1,3 +1,7 @@
-button:active {
-  background-color: red;
+.cow:focus {
+  background-color: gray;
+}
+
+#naming {
+  width: 50px;
 }
