@@ -1,5 +1,4 @@
-
-
-#naming {
-  width: 50px;
+.cow:hover {
+  background-color: mintcream;
+  cursor: pointer;
 }
