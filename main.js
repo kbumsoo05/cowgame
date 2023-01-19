@@ -1,27 +1,22 @@
 const fence = document.getElementById("fence");
-let create = document.getElementById("create");
-let naming = document.getElementById("naming");
-let john = document.getElementById("john");
-let selectName = document.getElementById("selectName");
+const create = document.getElementById("create");
+const naming = document.getElementById("naming");
+const selectName = document.getElementById("selectName");
+let cowCount = 0;
 
+let cow1 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow2 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow3 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow4 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow5 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow6 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow7 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow8 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow9 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
+let cow10 = { name: "", price: 0, str: 1, luck: 1, milk: 1, agg: 1, weight: 0 }
 
 create.onclick = function() {
-  if (!naming.value) {return;}
-  let name = naming.value
-  let newCow = document.createElement("button");
-  newCow.textContent = name;
-  newCow.setAttribute("id", name);
-  newCow.setAttribute("class", "cow");
-  
-
-  
-  fence.appendChild(newCow);
-  naming.value = "";
-  newCow.onclick = function() {
-    alert("asdf");
+  if (cowCount < 11) {
+    cowCount += 1;
   }
-}
-
-document.querySelector(".cow").onclick = function() {
-  alert("asdf");
-}
+};
